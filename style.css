@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  right: 0;
+  background: #ffffff00;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+nav .logo img {
+  width: 60px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc33;
+}
+
+nav .search i {
+  font-size: 19px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+nav .search i:hover {
+  color: #ffcc33;
+}
+
+#Home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_left {
+  width: 100%;
+  padding: 50px;
+  margin-top: 100px;
+}
+
+.home_left h1 {
+  font-size: 55px;
+  color: #000;
+}
+
+.home_left h1 span {
+  color: #ffcc33;
+}
+
+.home_left p {
+  margin-top: 20px;
+  color: #555;
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 27px;
+}
+
+.home_right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_right img {
+  width: 350px;
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+/*---Products---*/
+.products {
+  width: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.products h1 {
+  font-size: 50px;
+  color: #000;
+}
+
+.products_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.products_box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.products_card {
+  width: 250px;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.products_card:hover {
+  transform: scale(1.05);
+}
+
+.products_img {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.products_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.products_tag {
+  padding: 20px;
+  text-align: center;
+}
+
+.products_tag h2 {
+  font-size: 18px;
+  color: #000;
+}
+
+.buy-text {
+  display: none;
+  font-size: 16px;
+  color: white;
+  background: #ffcc33;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.buy-text:hover {
+  background: #ffb300;
+}
+
+/*---About---*/
+.about {
+  width: 100%;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about_image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about_image img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.about_tag {
+  flex: 2;
+  padding: 20px;
+}
+
+.about_tag h1 {
+  font-size: 50px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.about_tag p {
+  color: #555;
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 27px;
+}
+
+/*---Footer---*/
+footer {
+  width: 100%;
+  padding: 50px 0;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+footer .footer_main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer_tag {
+  flex: 1;
+  padding: 10px;
+  min-width: 200px;
+}
+
+.footer_tag h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer_tag p {
+  font-size: 14px;
+}
+
+.footer_tag a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer_tag img {
+  width: 100px;
+  margin-top: 10px;
+}
+
+.end {
+  margin-top: 20px;
+}
+
+.end span {
+  color: #ffcc33;
+}
+
+/*---Responsive---*/
+@media (max-width: 768px) {
+  .home_left h1 {
+    font-size: 45px;
+  }
+
+  .products_main {
+    flex-direction: column;
+  }
+
+  .products_card {
+    width: 100%;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about_image {
+    margin-bottom: 20px;
+  }
+}
+.home_right img {
+  width: 100%;
+  height: auto;
+}
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e0f7fa; /* Warna latar belakang yang segar */
+}
+
+/* Gaya umum untuk elemen gambar agar responsif */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Layout Flexbox */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Media Queries untuk responsivitas */
+@media (max-width: 768px) {
+  .home_left h1 {
+    font-size: 35px;
+  }
+  .home_right img {
+    width: 100%;
+  }
+  .products_card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Penyesuaian navbar untuk mobile */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Gaya khusus untuk bagian latar belakang */
+.home_right {
+  /* Latar belakang putih untuk kontras */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Jika Anda ingin menggunakan gambar latar belakang */
+body {
+  background-image: url("/image/cover.jpg"); /* Ganti dengan path ke gambar latar belakang Anda */
+  background-size: cover;
+  background-position: center;
+}

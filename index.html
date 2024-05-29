@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Candy Burst</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="image/logofcb.png" alt="Logo" />
+      </div>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Products">Produk</a></li>
+        <li><a href="#About">About</a></li>
+      </ul>
+    </nav>
+
+    <!-------------Home--------------->
+    <section id="Home">
+      <div class="home_left">
+        <h1>Fruit <span>Candy</span> <span>Burst</span></h1>
+        <p>
+          Rasakan ledakan rasa yang menyenangkan dengan Fruit Candy Burst kami!
+          Setiap potongannya dibuat dengan sempurna, menggabungkan manisnya buah
+          segar dengan ledakan kelezatan permen yang tak tertahankan.
+        </p>
+      </div>
+      <div class="home_right anim">
+        <img src="image/mix-fruits.png" alt="Mix Fruits" />
+      </div>
+    </section>
+
+    <!------------------Products-------------->
+    <div class="products" id="Products">
+      <h1>Produk kami</h1>
+      <div class="products_main">
+        <div class="products_box">
+          <div class="products_card">
+            <div class="products_img">
+              <img
+                src="image/image-removebg-preview.png"
+                alt="Permen Stroberri"
+              />
+            </div>
+            <div class="products_tag">
+              <h2>Permen Stroberri</h2>
+              <h2>Harga 7500 per 2 tusuk</h2>
+            </div>
+            <div class="buy-text" onclick="openWhatsAppForm()">Beli</div>
+          </div>
+          <div class="products_card">
+            <div class="products_img">
+              <img src="image/a.png" alt="Permen Anggur" />
+            </div>
+            <div class="products_tag">
+              <h2>Permen Anggur</h2>
+              <h2>Harga 7500 per 2 tusuk</h2>
+            </div>
+            <div class="buy-text" onclick="openWhatsAppForm()">Beli</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------About------------>
+    <div class="about" id="About">
+      <div class="about_image">
+        <img src="image/about.png" alt="Tentang Kami" />
+      </div>
+      <div class="about_tag">
+        <h1>Tentang Kami</h1>
+        <p>
+          Selamat datang di Fruit Candy Burst! Kami adalah produsen permen buah
+          yang berdedikasi untuk menghadirkan kelezatan dan kebahagiaan dalam
+          setiap gigitan. Dengan menggunakan bahan-bahan alami berkualitas
+          tinggi, kami memastikan setiap produk kami tidak hanya enak tetapi
+          juga sehat untuk Anda dan keluarga.
+          <br /><br />
+          Sejak awal berdiri, kami telah berkomitmen untuk memberikan yang
+          terbaik. Kami percaya bahwa permen tidak hanya sekadar camilan, tetapi
+          juga pengalaman yang dapat membawa keceriaan. Oleh karena itu, kami
+          selalu berinovasi dan menciptakan berbagai rasa yang unik dan menarik.
+          <br /><br />
+          Di Fruit Candy Burst, kepuasan pelanggan adalah prioritas utama kami.
+          Kami berusaha keras untuk memastikan setiap produk kami memenuhi
+          standar kualitas tertinggi. Tim kami yang berdedikasi selalu siap
+          untuk melayani Anda dengan senyum dan memberikan layanan terbaik.
+          <br /><br />
+          Terima kasih telah memilih Fruit Candy Burst. Kami berharap Anda
+          menikmati produk kami sama seperti kami menikmati membuatnya untuk
+          Anda!
+        </p>
+      </div>
+    </div>
+
+    <!-------------Footer-------------->
+    <footer>
+      <div class="footer_main">
+        <div class="footer_tag">
+          <h1>Quick Link</h1>
+          <p>Home</p>
+          <p>About</p>
+          <p>Products</p>
+        </div>
+        <div class="footer_tag">
+          <h1>KONTAK</h1>
+          <p><i class="fa-solid fa-location-dot"></i>Palembang</p>
+          <p><i class="fa-solid fa-phone"></i>+6281377536958</p>
+          <p><i class="fa-solid fa-envelope"></i>fruitcandyburst@gmail.com</p>
+        </div>
+        <div class="footer_tag">
+          <h1>IKUTI KAMI</h1>
+          <p>
+            <a
+              href="https://www.instagram.com/fruitcandy_burst"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+          </p>
+        </div>
+        <div class="footer_tag">
+          <h1>PEMBAYARAN ONLINE</h1>
+          <img src="image/DANA.png" alt="DANA" />
+        </div>
+      </div>
+      <p class="end">
+        Design By <span><i class="fa-solid fa-face-grin"></i>kelompok 7</span>
+      </p>
+    </footer>
+
+    <!-- Iframe for WhatsApp Form -->
+    <div
+      id="whatsapp-form"
+      style="
+        display: none;
+        position: fixed;
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        background-color: white;
+        z-index: 1000;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      "
+    >
+      <div style="text-align: right; padding: 10px">
+        <button onclick="closeWhatsAppForm()" style="font-size: 16px">X</button>
+      </div>
+      <iframe
+        src="https://whatsform.com/pqmxe4"
+        style="width: 100%; height: 90%; border: none"
+      ></iframe>
+    </div>
+
+    <script>
+      function openWhatsAppForm() {
+        document.getElementById("whatsapp-form").style.display = "block";
+      }
+
+      function closeWhatsAppForm() {
+        document.getElementById("whatsapp-form").style.display = "none";
+      }
+
+      document.querySelectorAll(".products_img img").forEach(function (img) {
+        img.addEventListener("click", function () {
+          var buyText =
+            this.closest(".products_card").querySelector(".buy-text");
+          buyText.style.display = "block";
+          setTimeout(function () {
+            buyText.style.display = "none";
+          }, 2000);
+        });
+      });
+    </script>
+  </body>
+</html>
